@@ -151,7 +151,7 @@ export const ContactText = styled.div`
   }
   
   span {
-    color: #ccc;
+    color: rgba(104, 144, 237, 0.86);
     font-size: 0.9rem;
   }
 `;
@@ -191,6 +191,7 @@ export const ContactForm = styled.form`
   
   @media (max-width: 768px) {
     padding: 2rem;
+    display: none;
   }
 `;
 

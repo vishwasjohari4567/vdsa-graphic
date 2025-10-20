@@ -19,6 +19,10 @@ export const Nav = styled.nav`
   position: relative;
   z-index: 10;
   animation: ${fadeInUp} 0.8s ease-out;
+
+   @media (max-width: 768px) {
+   justify-content: center;
+  }
 `;
 
 
@@ -45,6 +49,7 @@ export const NavLinks = styled.div`
   gap: 2rem;
   
   @media (max-width: 768px) {
+    display: none;
     gap: 1rem;
     flex-wrap: wrap;
   }

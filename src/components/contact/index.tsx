@@ -70,7 +70,7 @@ export default function Contact() {
               <ContactIcon>📱</ContactIcon>
               <ContactText>
                 <strong>Phone</strong>
-                <span>+91 12345 67890</span>
+                <span>+91 7520704567</span>
               </ContactText>
             </ContactItem>
             
@@ -78,24 +78,9 @@ export default function Contact() {
               <ContactIcon>📍</ContactIcon>
               <ContactText>
                 <strong>Location</strong>
-                <span>India</span>
+                <span>Meerut</span>
               </ContactText>
             </ContactItem>
-            
-            <SocialLinks>
-              <SocialLink href="https://behance.net/yourusername" target="_blank">
-                Behance
-              </SocialLink>
-              <SocialLink href="https://instagram.com/yourusername" target="_blank">
-                Instagram
-              </SocialLink>
-              <SocialLink href="https://dribbble.com/yourusername" target="_blank">
-                Dribbble
-              </SocialLink>
-              <SocialLink href="https://linkedin.com/in/yourusername" target="_blank">
-                LinkedIn
-              </SocialLink>
-            </SocialLinks>
           </ContactInfo>
           
           <ContactForm onSubmit={handleSubmit}>
