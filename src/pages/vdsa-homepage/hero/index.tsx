@@ -11,7 +11,7 @@ export default function Hero({ onNavigate }: HeaderProps) {
 
   return (
     <>
-      <Section>
+      <Section id={"home"}>
         <HeroContentWrapper>
           <LeftContent>
             <Title>

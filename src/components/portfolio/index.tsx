@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   PortfolioGrid,
-  ProjectCard,
-  ProjectImage,
-  ProjectOverlay,
-  ProjectInfo,
-  ProjectTitle,
-  ProjectDescription,
   ProjectTools,
   Tool,
   ProjectLinks,

@@ -11,15 +11,6 @@ const fadeIn = keyframes`
   }
 `;
 
-const slideUp = keyframes`
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-`;
-
 const scaleIn = keyframes`
   from {
     opacity: 0;
