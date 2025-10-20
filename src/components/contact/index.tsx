@@ -14,8 +14,6 @@ import {
   FormInput, 
   FormTextarea, 
   SubmitButton,
-  SocialLinks,
-  SocialLink
 } from './styles';
 
 export default function Contact() {
