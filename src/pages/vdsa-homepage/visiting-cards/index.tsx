@@ -6,7 +6,7 @@ import card  from '../../../assets/images/visiting-cards/card-2.png';
 export default function VisitingCard() {
 
   return (
-      <Section id={"visting-cards"}>
+      <Section id={"visiting-cards"}>
          <Title>Visiting Cards</Title>
         <ImagesWrapper>
             <ImageBox>
