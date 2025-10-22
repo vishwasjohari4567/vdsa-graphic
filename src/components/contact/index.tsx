@@ -23,15 +23,14 @@ export default function Contact() {
             <h3>Let's Work Together</h3>
             <p>
               I'm always excited to collaborate on creative projects. Whether you need 
-              illustrations, 3D art, photo editing, or design work, let's bring your 
-              vision to life.
+              illustrations or edit any Image, let's bring your vision to life.
             </p>
             
             <ContactItem>
               <ContactIcon>📧</ContactIcon>
               <ContactText>
                 <strong>Email</strong>
-                <span>vishwasjohari4567@gmai.com</span>
+                <span>vishwas4567@gmail.com</span>
               </ContactText>
             </ContactItem>
             
