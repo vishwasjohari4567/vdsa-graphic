@@ -5,7 +5,7 @@ import sericImages from '../../../assets/images/logo-design/seric.jpg';
 
 export default function LogoDesign() {
   return (
-    <Section id="illustrations">
+    <Section id="logo-design">
       <Title>Illustration</Title>
       <ImagesWrapper>
         <ImageBox>
