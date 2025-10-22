@@ -6,6 +6,7 @@ import Illustation from './illustrations';
 import MotionPoster from './motion-poster';
 import LogoDesign from './logo-design';
 import VisitingCard from './visiting-cards';
+import PhotoEditing from './photo-editing';
 
 export default function VDSAHomepage() {
     const handleNavigation = (section: string) => {
@@ -24,6 +25,7 @@ export default function VDSAHomepage() {
             <MotionPoster />
             <LogoDesign />
             <VisitingCard />
+            <PhotoEditing />
         </Main>
         <Contact />
     </>

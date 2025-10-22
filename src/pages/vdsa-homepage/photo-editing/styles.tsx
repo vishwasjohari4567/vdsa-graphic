@@ -1,22 +1,10 @@
-import styled, { keyframes } from 'styled-components';
-
-const fadeInUp = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
+import styled from 'styled-components';
 
 export const Section = styled.section`
   min-height: calc(100vh - 100px);
   background-color: white;
   padding: 4rem 2rem;
   text-align: center;
-  overflow: hidden;
 
   @media (max-width: 900px) {
     padding: 2rem 1rem;
@@ -44,66 +32,62 @@ export const Title = styled.h2`
 export const ImagesWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  animation: ${fadeInUp} 1s ease forwards;
 `;
 
-interface ImageBoxProps {
-  $landscape?: boolean;
-}
-
-export const ImageBox = styled.div<ImageBoxProps>`
+export const ImageBox = styled.div`
   flex: 1 1 auto;
-  max-width: ${({ $landscape }) => ($landscape ? '500px' : '300px')};
-  aspect-ratio: ${({ $landscape }) => ($landscape ? '16 / 9' : '1 / 1')};
+  max-width: 480px;
   overflow: hidden;
   border-radius: 16px;
   background: #fff;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-  border: 1px solid green;
-
-  opacity: 0;
-  animation: ${fadeInUp} 0.8s ease forwards;
-  animation-delay: ${({ $landscape }) => ($landscape ? '0.2s' : '0s')};
-
-  box-shadow: 0 8px 24px rgba(105, 111, 199, 0.1); // Soft bluish shadow
+  border: 1px solid #e0e7ff;
+  box-shadow: 0 8px 20px rgba(105, 111, 199, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(30%) contrast(1);
+    display: block;
+    filter: grayscale(10%) brightness(0.95);
     transition: transform 0.4s ease, filter 0.4s ease;
   }
 
   &:hover {
-    transform: translateY(-6px);
+    transform: scale(1.015);
+    transform: translateY(-4px);
     box-shadow: 
       0 0 10px rgba(255, 215, 0, 0.4), 
       0 0 20px rgba(255, 215, 0, 0.6), 
       0 0 30px rgba(255, 215, 0, 0.8); /* Glowing effect */
 
     img {
-      filter: grayscale(0%) contrast(1.05) saturate(1.2);
-      transform: scale(1.03);
+      filter: grayscale(0%) brightness(1.05) contrast(1.1);
+      transform: scale(1.02);
     }
   }
 
   @media (max-width: 768px) {
     max-width: 100%;
     aspect-ratio: auto;
+    border: none;
     box-shadow: none;
 
     &:hover {
       transform: none;
       box-shadow: none;
+
+      img {
+        transform: none;
+        filter: none;
+      }
     }
 
     img {
       filter: none;
-      transform: none;
     }
   }
 `;
